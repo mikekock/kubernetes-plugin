@@ -396,7 +396,7 @@ public class ContainerExecDecorator extends LauncherDecorator implements Seriali
             }
 
             private void setupEnvironmentVariable(EnvVars vars, ExecWatch watch) throws IOException {
-                for (Map.Entry<String, String> entry : vars.entrySet()) {
+                /*for (Map.Entry<String, String> entry : vars.entrySet()) {
                     //Check that key is bash compliant.
                     if (entry.getKey().matches("[a-zA-Z_][a-zA-Z0-9_]*")) {
                             watch.getInput().write(
@@ -408,7 +408,7 @@ public class ContainerExecDecorator extends LauncherDecorator implements Seriali
                                     ).getBytes(StandardCharsets.UTF_8)
                             );
                         }
-                    }
+                    }*/
             }
 
             private void waitUntilContainerIsReady() throws IOException {
